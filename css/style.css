@@ -2,7 +2,6 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --branding-color: #6c63ff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -12,6 +11,7 @@ body {
   margin-top: 0;
   padding: 0, 40px, 40px, 40px;
   font-family: var(--default-font-family);
+  font-weight: 400;
 }
 h1,
 h2,
@@ -45,7 +45,6 @@ p {
   margin-bottom: 50px;
   text-align: center;
 }
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -76,6 +75,16 @@ p {
   }
   .hero {
     padding: 80px 20px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 .hero {
@@ -155,4 +164,45 @@ p {
 .app-text {
   margin-bottom: 55px;
   padding-left: 10px;
+}
+.about-section {
+  padding: 160px 20px;
+  width: 100%;
+}
+.about-section-content {
+  margin: 30px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h1,
+h2,
+p {
+  text-align: left;
+  padding: 0;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+  margin-top: 0;
+}
+.about-name {
+  margin-top: 55px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.rounded-image {
+  border-radius: 40px;
+  margin: 0;
+  width: 400px;
+}
+.btn-branding {
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
