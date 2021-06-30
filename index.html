@@ -22,43 +22,34 @@
   </head>
   <body>
     <body cz-shortcut-listen="true">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Amethyst El</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./project/about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./project/about.html#contact">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img src="images/shecodeslogo.png" class="logo d-none d-md-block" alt="">
+          <img src="images/shecodeslogosmall.jpeg" class="logo d-block d-md-none" alt="">
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/"> Home</a>
+          </li>
+          <li>
+            <a href="project/about.html"> About</a>
+          </li>
+          <li>
+            <a href="project/work.html"> Work</a>
+          </li>
+          <li>
+            <a href="project/contact.html"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="hero">
       <h2 class="text-center">👋🏾 Hi, I am</h2>
     <h1 class="text-center">Amethyst Bush El</h1>
     <h3 class="text-center mb-5">🇺🇸 Front-end developer, based in the USA</h3>
-    <div class="navigation-links mb-5">
-      <a href="./project/about.html#contact" class="contact-link">Contact me</a>
+    <div class="contact-link">
+      <a href="project/contact.html" class="btn btn-branding">Contact me</a>
     </div>
   </div>
     <br />
