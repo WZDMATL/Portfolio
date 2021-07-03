@@ -5,7 +5,6 @@
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
-
 body {
   margin: 0;
   font-family: var(--default-font-family);
@@ -55,6 +54,9 @@ p {
   }
   .hero {
     padding: 80px 20px;
+  }
+  .text-center {
+    margin-top: 40px;
   }
   .about-section {
     text-align: center;
@@ -114,7 +116,8 @@ nav li.active a {
 }
 .hero {
   background: var(--secondary-color);
-  padding: 160px 20px;
+  padding: 20px 20px;
+  padding-bottom: 50px;
   font-weight: bold;
   line-height: 2;
 }
@@ -143,6 +146,8 @@ nav li.active a {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
 }
 .about-paragraphs {
   display: flex;
@@ -252,4 +257,25 @@ footer .contact-box {
 }
 footer .contact-box p {
   margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+footer .social-links {
+  color: var(--primary-color);
+  margin: 0 20px;
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+}
+footer .social-links:hover {
+  color: white;
+  background: var(--primary-color);
 }
