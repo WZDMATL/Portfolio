@@ -144,24 +144,34 @@ img.img-fluid.rounded.force {
   padding-bottom: 50px;
   font-weight: bold;
   line-height: 2;
-  background-image: url(../images/abstract-3866486_1280.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.856),
+      rgba(245, 245, 245, 0.904)
+    ),
+    url(../images/WZDM\ Management\ Agency\ Logo_Proxy.png);
   background-size: cover;
   height: 750px;
   background-attachment: fixed;
+  background-position: top-center;
+  position: relative;
   transition: 0.2s;
 }
 .hero h3 {
   font-family: var(--dafault-font-family);
   font-weight: bold;
   font-size: 24px;
+  z-index: 10;
 }
 .hero p {
   font-weight: bold;
   margin: 0px;
   font-size: 16px;
+  z-index: 10;
 }
 .text-group {
   padding: 80px 0;
+  z-index: 10;
 }
 .contact-link {
   text-align: center;
@@ -449,9 +459,6 @@ footer .email-link:hover {
 }
 #wzdm {
   font-family: "Prata", serif;
-}
-#work-images {
-  padding-left: 30px;
 }
 a img:hover {
   -webkit-transition: all 0.5s ease;
