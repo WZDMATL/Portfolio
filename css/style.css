@@ -199,6 +199,7 @@ img.img-fluid.rounded.force {
   flex-wrap: wrap;
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
 }
 .about-paragraphs {
   display: flex;
