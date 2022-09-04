@@ -1,11 +1,5 @@
 :root {
-  --primary-color: radial-gradient(
-    circle at 7.5% 24%,
-    rgb(160, 151, 235) 0%,
-    rgb(32, 46, 236) 25.5%,
-    rgb(31, 229, 255) 62.3%,
-    rgb(215, 248, 247) 93.8%
-  );
+  --primary-color: linear-gradient(to top, #fffefe 0%, #fff4f2 100%);
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Playfair Display", serif;
@@ -15,9 +9,10 @@ body {
   margin: 0;
   font-family: var(--default-font-family);
   line-height: 1.5;
-  background: white;
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   overflow-x: hidden;
   min-height: 100vh;
+  text-shadow: rgb(187, 187, 187) 1px 0 10px;
 }
 
 h1,
@@ -150,16 +145,16 @@ img.img-fluid.rounded.force {
   padding-bottom: 50px;
   font-weight: bold;
   line-height: 2;
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.856),
       rgba(245, 245, 245, 0.904)
     ),
-    url(../images/WZDM\ Management\ Agency\ Logo_Proxy.png);
+    url(../images/family-g790c86241_1920.jpg);
   background-size: cover;
   height: 750px;
   background-attachment: fixed;
-  background-position: top-center;
+  background-position: top-center;*/
   position: relative;
   transition: 0.2s;
 }
@@ -239,7 +234,7 @@ img.img-fluid.rounded.force {
   margin-bottom: 20px;
 }
 .launch:hover {
-  color: white;
+  color: #000;
   background: var(--primary-color);
   border: none;
 }
@@ -289,10 +284,11 @@ p {
 .btn-branding {
   background: var(--primary-color);
   border-radius: 4px;
-  color: white;
+  color: #000;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .content-container {
   padding: 160px 20px;
